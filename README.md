@@ -188,3 +188,14 @@ docker inspect ollama
 - [Ollama Dockerhub Repository](https://hub.docker.com/r/ollama/ollama)
 - [Ollama Library](https://ollama.com/library)
 - [Ollama API](https://github.com/ollama/ollama/blob/main/docs/api.md)
+
+
+---
+### 💼 Connect with me 👇👇 😊
+
+- 🔥 [**Youtube**](https://www.youtube.com/@DevOpsinAction?sub_confirmation=1)
+- ✍ [**Blog**](https://ibraransari.blogspot.com/)
+- 💼 [**LinkedIn**](https://www.linkedin.com/in/ansariibrar/)
+- 👨‍💻 [**Github**](https://github.com/meibraransari?tab=repositories)
+- 💬 [**Telegram**](https://t.me/DevOpsinActionTelegram)
+- 🐳 [**Docker**](https://hub.docker.com/u/ibraransaridocker)
