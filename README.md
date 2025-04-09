@@ -74,6 +74,9 @@ docker exec -it ollama ollama pull llama2
 
 ### Basic Usage
 ```bash
+# List installed ollama models
+docker exec -it ollama ollama list
+
 # Pull a model
 docker exec -it ollama ollama pull <model-name>
 # Example:
