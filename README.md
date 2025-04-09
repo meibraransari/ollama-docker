@@ -1,12 +1,12 @@
 # Deploying Ollama with Docker on Linux
 
-## Prerequisites
+## Prerequisites 📋
 - Linux operating system
 - Docker installed and running
 - Git (optional, for cloning the repository)
 - Basic knowledge of Docker commands
 
-## Step 1: Install Docker (if not already installed)
+## Step 1: Install Docker (if not already installed) ⚙️
 
 ```bash
 # Update package lists
@@ -36,7 +36,7 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 sudo docker run hello-world
 ```
 
-## Step 2: Pull and Run Ollama Docker Image
+## Step 2: Pull and Run Ollama Docker Image 📥
 
 ```bash
 # Pull the official Ollama Docker image
@@ -54,7 +54,7 @@ docker run -d \
   ollama/ollama
 ```
 
-## Step 3: Verify Ollama Installation
+## Step 3: Verify Ollama Installation ✅
 
 ```bash
 # Check if the container is running
@@ -70,7 +70,7 @@ docker logs ollama -f
 docker exec -it ollama ollama pull llama2
 ```
 
-## Step 4: Using Ollama
+## Step 4: Using Ollama 🛠️
 
 ### Basic Usage
 ```bash
@@ -88,7 +88,7 @@ Example:
 docker exec -it ollama ollama run llama3.2:3b
 ```
 
-### Common Models
+### Common Models 🧠
 - llama2
 - mistral
 - codellama
@@ -96,7 +96,7 @@ docker exec -it ollama ollama run llama3.2:3b
 
 <a href="https://ollama.com/library" target="_blank">Model Reference:</a>
 
-## Step 5: Managing the Container
+## Step 5: Managing the Container 🛑
 
 ```bash
 # Stop the container
@@ -112,7 +112,7 @@ docker rm ollama
 docker logs ollama
 ```
 
-## Step 6: Optional - Test API
+## Step 6: Optional - Test API 🖥️
 
 ```bash
 # Check llama status frm browser
@@ -126,7 +126,7 @@ https://github.com/ollama/ollama/blob/main/docs/api.md
 
 ```
 
-## Step 7: Setup Openwebui to access Ollama.
+## Step 7: Setup Openwebui to access Ollama. 🌐
 ##### Change "YOUR_IP" to your private IP of host in below command then run.
 
 ```bash
@@ -157,9 +157,9 @@ http://YOUR_IP:8080/
 # Settings available on
 http://YOUR_IP:8080/admin/settings
 ```
-## Troubleshooting
+## Troubleshooting 🛠️
 
-### Common Issues
+### Common Issues ⚠️
 1. **Port Conflict**: If port 11434 is already in use, change the port mapping in the docker run command.
 2. **Permission Issues**: If you encounter permission issues, try running with sudo or add your user to the docker group:
    ```bash
@@ -167,7 +167,7 @@ http://YOUR_IP:8080/admin/settings
    ```
 3. **Storage Issues**: If you run out of space, check the ~/.ollama directory and clean up unused models.
 
-### Checking Container Status
+### Checking Container Status 📊
 ```bash
 # Check container logs
 docker logs ollama
@@ -176,7 +176,7 @@ docker logs ollama
 docker inspect ollama
 ```
 
-## Security Considerations
+## Security Considerations 🔒
 1. By default, Ollama is accessible on port 11434. Consider using a firewall to restrict access.
 2. The container runs with root privileges. For production use, consider implementing additional security measures.
 3. Regularly update the Docker image to get security patches:
@@ -184,7 +184,7 @@ docker inspect ollama
    docker pull ollama/ollama:latest
    ```
 
-## Additional Resources
+## Additional Resources 📚
 - [Ollama Documentation](https://ollama.ai/docs)
 - [Docker Documentation](https://docs.docker.com)
 - [Ollama GitHub Repository](https://github.com/ollama/ollama)
