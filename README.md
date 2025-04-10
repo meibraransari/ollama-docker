@@ -53,7 +53,27 @@ docker run -d \
   -v ~/.ollama:/root/.ollama \
   ollama/ollama
 ```
+## Step 2 A: 📥 Pull and Run Ollama Docker Image With GPU
 
+```bash
+# Pull the official Ollama Docker image
+docker pull ollama/ollama
+
+# Create a directory for Ollama data persistence
+mkdir -p ~/.ollama
+
+# Installing the NVIDIA Container Toolkit
+https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installation
+
+# Run Ollama container
+docker run -d \
+  --restart=always \
+  --name ollama \
+  --gpus=all \
+  -p 11434:11434 \
+  -v ~/.ollama:/root/.ollama \
+  ollama/ollama
+```
 ## Step 3: ✅ Verify Ollama Installation 
 
 ```bash
@@ -191,6 +211,7 @@ docker inspect ollama
 - [Ollama Dockerhub Repository](https://hub.docker.com/r/ollama/ollama)
 - [Ollama Library](https://ollama.com/library)
 - [Ollama API](https://github.com/ollama/ollama/blob/main/docs/api.md)
+- [Ollama Docker Guide](https://ollama.com/blog/ollama-is-now-available-as-an-official-docker-image)
 
 
 ---
