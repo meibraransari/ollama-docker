@@ -65,6 +65,9 @@ mkdir -p ~/.ollama
 # Installing the NVIDIA Container Toolkit
 https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#installation
 
+# Test GPU integration with docker
+docker run --gpus all nvidia/cuda:11.5.2-base-ubuntu20.04 nvidia-smi
+
 # Run Ollama container
 docker run -d \
   --restart=always \
