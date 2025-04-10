@@ -1,6 +1,6 @@
 ---
 Created: 2025-04-09T06:36:24+05:30
-Updated: 2025-04-10T07:30:36+05:30
+Updated: 2025-04-10T07:41:54+05:30
 ---
 # Deploying Ollama with Docker on Linux
 
@@ -181,7 +181,7 @@ docker run -itd \
   --restart always \
   --name open-webui \
   -p 8080:8080 \
-  -v open-webui:/app/backend/data \
+  -v openwebui:/app/backend/data \
   -e OLLAMA_BASE_URL=http://YOUR_IP:11434 \
   ghcr.io/open-webui/open-webui:main
 
