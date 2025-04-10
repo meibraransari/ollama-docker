@@ -1,7 +1,3 @@
----
-Created: 2025-04-09T06:36:24+05:30
-Updated: 2025-04-10T07:41:54+05:30
----
 # Deploying Ollama with Docker on Linux
 
 ## 📋 Prerequisites 
@@ -40,7 +36,7 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 sudo docker run hello-world
 ```
 
-## Step 2: 📥 Pull and Run Ollama Docker Image 
+## Step 2: 📥 Pull and Run Ollama Docker Image (CPU only)
 
 ```bash
 # Pull the official Ollama Docker image
@@ -57,7 +53,7 @@ docker run -d \
   -v ~/.ollama:/root/.ollama \
   ollama/ollama
 ```
-## Step 2 A: 📥 Pull and Run Ollama Docker Image With GPU
+## Step 2 A: 📥 Pull and Run Ollama Docker Image (Nvidia GPU)
 
 ```bash
 # Pull the official Ollama Docker image
