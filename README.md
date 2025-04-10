@@ -1,3 +1,7 @@
+---
+Created: 2025-04-09T06:36:24+05:30
+Updated: 2025-04-10T07:30:36+05:30
+---
 # Deploying Ollama with Docker on Linux
 
 ## 📋 Prerequisites 
@@ -123,12 +127,12 @@ docker exec -it ollama ollama list
 # Pull a model
 docker exec -it ollama ollama pull <model-name>
 # Example:
-docker exec -it ollama ollama pull llama3.2:3b
+docker exec -it ollama ollama pull gemma3:1b
 
 # Run a model
 docker exec -it ollama ollama run <model-name>
 Example:
-docker exec -it ollama ollama run llama3.2:3b
+docker exec -it ollama ollama run gemma3:1b
 ```
 
 ### 🧠 Common Models 
