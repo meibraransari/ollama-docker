@@ -1,5 +1,8 @@
 # Deploying Ollama with Docker on Linux
 
+## 🎬 Video Demonstration
+[![Watch on Youtube](https://i.ytimg.com/vi/fXGZbm1Ys60/maxresdefault.jpg)](https://youtu.be/fXGZbm1Ys60)
+
 ## 📋 Prerequisites 
 - Linux operating system
 - Docker installed and running
